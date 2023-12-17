@@ -8,3 +8,6 @@ The format is based on https://keepachangelog.com/en/1.1.0[Keep a Changelog], an
 
 
 == {url-github-repository}[Unreleased]
+
+=== Added
+* GitHub Actions entrypoint.
