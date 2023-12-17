@@ -31,4 +31,4 @@ runs:
       uses: rainstormy/github-action-install-ssh-key@v1 # https://github.com/rainstormy/github-action-install-ssh-key
       with:
         known-hosts: ${{ inputs.ssh-key-fingerprints-github }}
-        private-key: ${{ inputs.bot-nimbus-ssh-the-private-key }}
+        the-private-key: ${{ inputs.bot-nimbus-ssh-the-private-key }}
