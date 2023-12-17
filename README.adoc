@@ -1,0 +1,3 @@
+= Use Nimbus (Bot) in Git &ndash; Rainstorm-Specific Release Automation
+:experimental:
+:source-highlighter: highlight.js
