@@ -2,5 +2,27 @@
 	"$schema": "https://json.schemastore.org/package.json",
 	"private": true,
 	"type": "module",
-	"packageManager": "yarn@4.0.2"
+	"scripts": {
+		"setup": "yarn install && simple-git-hooks",
+		"validate.format": "        prettier './.vscode/**/*.json' './*.config.{js,ts}' './*.{json,yml}' --log-level warn --cache --check",
+		"validate.format.fix": "    prettier './.vscode/**/*.json' './*.config.{js,ts}' './*.{json,yml}' --log-level warn --cache         --list-different --write",
+		"validate.format.nocache": "prettier './.vscode/**/*.json' './*.config.{js,ts}' './*.{json,yml}' --log-level warn         --check"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "yarn run validate.format"
+	},
+	"devDependencies": {
+		"prettier": "3.1.1",
+		"simple-git-hooks": "2.9.0"
+	},
+	"packageManager": "yarn@4.0.2",
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"//": {
+		"devDependencies": {
+			"prettier": "Prettier is an opinionated code formatter.",
+			"simple-git-hooks": "This tool makes the package.json file define Git hooks."
+		}
+	}
 }

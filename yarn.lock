@@ -5,8 +5,29 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"github-action-rainstorm-use-rainstormybot-nimbus@workspace:.":
+"prettier@npm:3.1.1":
+  version: 3.1.1
+  resolution: "prettier@npm:3.1.1"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: facc944ba20e194ff4db765e830ffbcb642803381f0d2033ed397e79904fa4ccc877dc25ad68f42d36985c01d051c990ca1b905fb83d2d7d65fe69e4386fa1a3
+  languageName: node
+  linkType: hard
+
+"root-workspace-0b6124@workspace:.":
   version: 0.0.0-use.local
-  resolution: "github-action-rainstorm-use-rainstormybot-nimbus@workspace:."
+  resolution: "root-workspace-0b6124@workspace:."
+  dependencies:
+    prettier: "npm:3.1.1"
+    simple-git-hooks: "npm:2.9.0"
   languageName: unknown
   linkType: soft
+
+"simple-git-hooks@npm:2.9.0":
+  version: 2.9.0
+  resolution: "simple-git-hooks@npm:2.9.0"
+  bin:
+    simple-git-hooks: cli.js
+  checksum: 4ccc501810b5102b4d7fdb2a2707e0ea9241c708152cf36c30c816ba04a1a06bf3e94efd6f1699f5fba6c191bdd6d65ff026836d12f4c292130cfda5b60a5ba0
+  languageName: node
+  linkType: hard

@@ -10,14 +10,14 @@ const RAW_RUNTIME_STATE =
   ],\
   "dependencyTreeRoots": [\
     {\
-      "name": "github-action-rainstorm-use-rainstormybot-nimbus",\
+      "name": "root-workspace-0b6124",\
       "reference": "workspace:."\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["github-action-rainstorm-use-rainstormybot-nimbus", ["workspace:."]]\
+    ["root-workspace-0b6124", ["workspace:."]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -26,17 +26,39 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["prettier", "npm:3.1.1"],\
+          ["simple-git-hooks", "npm:2.9.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
     ]],\
-    ["github-action-rainstorm-use-rainstormybot-nimbus", [\
+    ["prettier", [\
+      ["npm:3.1.1", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.1.1-072c31ec21/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["root-workspace-0b6124", [\
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["github-action-rainstorm-use-rainstormybot-nimbus", "workspace:."]\
+          ["root-workspace-0b6124", "workspace:."],\
+          ["prettier", "npm:3.1.1"],\
+          ["simple-git-hooks", "npm:2.9.0"]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["simple-git-hooks", [\
+      ["npm:2.9.0", {\
+        "packageLocation": "./.yarn/unplugged/simple-git-hooks-npm-2.9.0-4354a7c11a/node_modules/simple-git-hooks/",\
+        "packageDependencies": [\
+          ["simple-git-hooks", "npm:2.9.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]]\
   ]\
